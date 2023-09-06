@@ -1,0 +1,498 @@
+
+:root{
+  --bg-color: #081b29;
+  --second-bg-color: #112e42;
+  --text-color: #ededed;
+  --main-color: #00abf0;
+}
+
+#home{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  /* padding: 0 9%; */
+}
+
+#banner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-height: 470px;
+	position: relative;
+  background: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5));
+}
+.banner-img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	object-fit: cover;
+	object-position: center;
+}
+
+
+#banner .arrow {
+	position: absolute;
+}
+
+#banner .arrow_left {
+	left: 10px;
+}
+
+#banner .arrow_right {
+	right: 10px;
+}
+
+/* Gestion des points du carrousel */
+.dots {
+	position: absolute;
+	bottom: 40px;
+	display: flex;
+}
+
+#banner .icons{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  padding: 0 1rem 0 1rem;
+  top: 50%;
+  display: none;
+}
+
+#banner .icons .icon-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 5px;
+  height: 50px;
+  width: 40px;
+}
+
+#banner .icons .icon-div:hover{
+  cursor: pointer;
+  background-color: rgb(47, 34, 34);
+  transition: 2s;
+}
+
+#banner .icons i{
+  color: white;
+  font-size: 24px;
+  transition: 0.6s ease;
+  font-weight: bold;
+  user-select: none;
+}
+
+.dot {
+	margin-inline: 5px;
+	width: 13px;
+	height: 13px;
+	background-color: #ffffff00;
+	border: 3px solid #fff;
+	border-radius: 100%;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);;
+}
+
+.dot_selected {
+	background-color: #fff;
+}
+
+.home-content{
+  max-width: 61rem;
+  z-index: 99;
+}
+
+.home-content h1{
+  position: relative;
+  display: inline-block;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.home-content h1 span{
+  color: var(--text-color);
+}
+
+.home-content .text-animate{
+  position: relative;
+  width: 34.8rem;
+}
+
+.home-content .text-animate h3{
+  font-size: 3rem;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: .7px var(--main-color);
+  background-image: linear-gradient(var(--main-color), var(--main-color));
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-position: -35rem 0;
+}
+
+.home #banner .home-content .text-animate h3{
+  animation: homeBgText 6s linear infinite;
+  animation-delay: 2s;
+}
+
+.home-content .text-animate h3::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-right: 2px solid var(--main-color);
+  z-index: -1;
+}
+
+.home #banner .home-content .text-animate h3::before{
+  animation: homeCursorText 6s linear infinite;
+  animation-delay: 2s;
+}
+
+/* music/video section design ===================================================== */
+.music-sect{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+	flex-direction: column;
+	padding: 2rem 2rem 3rem 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.music-sect h1{
+	font-weight: 900;
+	font-size: 3rem;
+	width: 200px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	letter-spacing: .6rem;
+}
+
+.music-sect .upperBorder,
+.music-sect .lowerBorder,
+.vid-sect .upperBorder,
+.vid-sect .lowerBorder,
+.about-me .upperBorder,
+.about-me .lowerBorder,
+.social-links .upperBorder,
+.social-links .lowerBorder{
+	content: '';
+	display: block;
+	height: 3px;
+	width: 100%;
+	background: var(--text-color);
+}
+
+.music-sect .upperBorder,
+.vid-sect .upperBorder,
+.about-me .upperBorder,
+.social-links .upperBorder{
+	margin-bottom: .3rem;
+}
+
+.music-sect .lowerBorder,
+.vid-sect .lowerBorder,
+.about-me.lowerBorder,
+.social-links .lowerBorder{
+	margin-top: .3rem;
+}
+
+/* .music-sect .Mslider{
+	height: 300px;
+} */
+
+.btn-box .btn{
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 17.5rem;
+  height: 50px;
+  background: var(--main-color);
+  border: .2rem solid var(--main-color);
+  border-radius: .8rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  color: var(--bg-color);
+  z-index: 1;
+  overflow: hidden;
+  transition: .5s;
+  bottom: 2rem;
+  margin-top: 2.5rem;
+}
+
+.music-sect .btn-box .btn:hover,
+.vid-sect .btn-box .btn:hover{
+  color: var(--main-color);
+}
+
+.music-sect .btn-box .btn::before,
+.vid-sect .btn-box .btn::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--bg-color);
+  z-index: -1;
+  transition: .5s;
+}
+
+.music-sect .btn-box .btn:hover::before,
+.vid-sect .btn-box .btn:hover::before{
+  width: 100%;
+}
+
+.music-sect .Mslider{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.music-sect .Mslider .block{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  width: 350px;
+  height: 500px;
+  border: .2rem solid var(--main-color);
+  border-radius: 5px;
+  position: relative;
+}
+
+.music-sect .Mslider .block img{
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.playTime{
+  position: absolute;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  border: solid .2rem var(--bg-color);
+  border-radius: 3px;
+  color: #081b29;
+  right: 2rem;
+  top: 2rem;
+}
+
+/* vid ============================================================================= */
+
+.vid-sect{
+  display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+	flex-direction: column;
+	padding: 2rem 2rem 3rem 2rem;
+  margin-top: 2rem;
+}
+
+.vid-sect h1{
+  font-weight: 900;
+	font-size: 3rem;
+	width: 200px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	letter-spacing: .6rem;
+}
+
+.vid-sect .Vslider{
+  display: flex;
+  gap: 3rem;
+  height: 400px;
+}
+
+.vid-sect .Vslider .vid{
+  height: 100%;
+  width: 530px;
+  border: .3rem solid var(--main-color);
+}
+
+/* about me section design =========================================================== */
+.about-me{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: var(--second-bg-color);
+  padding-bottom: 6rem;
+  padding-top: 5rem;
+}
+
+.about-me .heading{
+  position: relative;
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  width: 250px;
+}
+
+.about-me .about-content{
+  width: 60%;
+  text-align: center;
+}
+
+.about-content p{
+  position: relative; 
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+}
+
+
+
+@media (max-width: 1100px) {
+  .music-sect .Mslider .block{
+    width: 300px;
+  }
+
+  .vid-sect .Vslider .vid{
+    width: 450px;
+  }
+
+  .music-sect .Mslider audio{
+    width: 260px;
+  }
+
+}
+
+/* @media (max-width: 1100px){
+  .music-sect .Mslider .block{
+    width: 270px;
+  }
+
+  .music-sect .Mslider audio{
+     width: 260px;
+  }
+} */
+
+@media (max-width: 965px){
+  .music-sect .Mslider{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .vid-sect .Vslider{
+    flex-direction: column;
+    height: 900px;
+  }
+
+  .vid-sect .Vslider .vid{
+    width: 600px;
+  }
+}
+
+@media (max-width: 657px){
+  .music-sect .Mslider{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .music-sect .Mslider .block{
+    width: 450px;
+  }
+
+  .music-sect .Mslider audio{
+    width: auto;
+  }
+}
+
+@media (max-width: 627px){
+  .music-sect .Mslider .block{
+    width: 350px;
+  }
+
+  .vid-sect .Vslider .vid{
+    width: 450px;
+  }
+}
+
+@media (max-width: 582px){
+  .home-content h1{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 482px){
+  .vid-sect .Vslider .vid{
+    width: 400px;
+  }
+}
+
+@media (max-width: 462px){
+  .home-content h1{
+    font-size: 5.2rem;
+  }
+}
+
+@media (max-width: 442px){
+  .vid-sect .Vslider .vid{
+    width: 350px;
+  }
+}
+
+@media (max-width: 400px){
+  .home-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-content h1{
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 385px) {
+  .home-content h1{
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 373px){
+  .music-sect .Mslider .block{
+    width: 320px;
+  }
+  .vid-sect .Vslider .vid{
+    width: 320px;
+  }
+}
+
+
+@keyframes homeBgText {
+  0%,10%,100%{
+    background-position: -35rem 0;
+  }
+  65%,85%{
+    background-position: 0 0;
+  }
+}
+
+@keyframes homeCursorText {
+  0%,10%,100%{
+    width: 0;
+  }
+  65%,78%,85%{
+   width: 100%;
+   opacity: 1;
+  }
+  75%,81%{
+    opacity: 0;
+  }
+}

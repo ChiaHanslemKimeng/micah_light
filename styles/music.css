@@ -1,0 +1,119 @@
+
+
+.home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 12rem;
+  /* margin-bottom: 3rem; */
+  gap: 4rem;
+}
+
+.home h1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3rem;
+  width: 200px;
+}
+
+.home .upperBorder,
+.home .lowerBorder{
+  content: '';
+	display: block;
+	height: 3px;
+	width: 100%;
+	background: var(--text-color);
+}
+
+.Mrow{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.Mrow .block{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  width: 350px;
+  height: 500px;
+  border: .2rem solid var(--main-color);
+  border-radius: 5px;
+  position: relative;
+}
+
+.Mrow .block img{
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.playTime{
+  position: absolute;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  border: solid .2rem var(--bg-color);
+  border-radius: 3px;
+  color: #081b29;
+  right: 2rem;
+  top: 2rem;
+}
+
+@media (max-width: 1118px){
+  .Mrow .block{
+    width: 330px;
+  }
+}
+
+@media (max-width: 1047px){
+  .Mrow .block{
+    width: 310px;
+  }
+}
+
+@media (max-width: 986px){
+  .Mrow{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Mrow .block{
+    width: 350px;
+  }
+}
+
+@media (max-width: 735px){
+  .Mrow .block{
+    width: 320px;
+  }
+}
+
+@media (max-width: 680px){
+  .Mrow{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .Mrow .block{
+    width: 350px;
+  }
+}
+
+@media (max-width: 361px){
+  .Mrow .block{
+    width: 320px;
+  }
+}
+
+@media (max-width: 340px){
+  .Mrow .block{
+    width: 300px;
+  }
+
+  .home .Mrow audio{
+    width: 280px;
+  }
+}

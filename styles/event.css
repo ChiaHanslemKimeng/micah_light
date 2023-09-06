@@ -1,0 +1,47 @@
+
+.home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+  gap: 3rem;
+}
+
+.home h1{
+  font-size: 5rem;
+}
+
+.home h3{
+  font-size: 2.5rem;
+}
+
+@media (max-width: 607px){
+  .home h1{
+    font-size: 4.5rem;
+  }
+
+  .home h3{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 460px){
+  .home h1{
+    font-size: 4rem;
+  }
+
+  .home h3{
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 370px){
+  .home h1{
+    font-size: 3.6rem;
+  }
+
+  .home h3{
+    font-size: 1.3rem;
+  }
+}
