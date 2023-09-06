@@ -1,5 +1,40 @@
 
 
+// home music array ===================================================
+const musics = [
+  {
+    image: "../photos/img1.jpg",
+    playtime: "3:24",
+    audio: "../audio/aud1.mp3"
+  },
+  {
+    image: "../photos/img2.jpg",
+    playtime: "3:09",
+    audio: "../audio/aud2.mp3"
+  },
+  {
+    image: "../photos/img3.jpg",
+    playtime: "3:21",
+    audio: "../audio/aud3.mp3"
+  }
+]
+
+let musicHtml = '';
+
+musics.forEach((music) => {
+  musicHtml += `
+  <div class="block">
+     <img src="${music.image}" alt="#">
+     <div class="playTime">${music.playtime}</div>
+     <audio controls>
+       <source src="${music.audio}">
+     </audio>
+  </div>
+  `
+});
+
+document.querySelector('.js-music').innerHTML = musicHtml;
+
 
 // home slider ===============================================================================>
 const slides = [
@@ -7,13 +42,13 @@ const slides = [
 		"image": "IMG_2485.jpg"
 	},
 	{
-		"image": "sample.jpg"
+		"image": "home1.jpg"
 	},
 	{
-		"image": "sample2.jpg"
+		"image": "home2.jpg"
 	},
 	{
-		"image": "sample3.jpg"
+		"image": "home3.jpg"
 	}
 ]
 

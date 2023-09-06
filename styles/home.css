@@ -1,4 +1,20 @@
 
+/* @keyframes home_animate {
+  0%,100%{
+     background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(../photos/IMG_2485.jpg);
+  }
+  30%{
+     background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(../photos/sample.jpg);
+  }
+  50%{
+     background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(../photos/sample2.jpg);
+  }
+  80%{
+     background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(../photos/sample3.jpg);
+  }
+} */
+
+
 :root{
   --bg-color: #081b29;
   --second-bg-color: #112e42;
@@ -23,7 +39,13 @@
 	min-height: 470px;
 	position: relative;
   background: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5));
+  animation: home_animate 16s ease-in-out; 
+  animation-direction: alternate-reverse;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
 }
+
 .banner-img {
 	position: absolute;
 	width: 100%;
@@ -32,7 +54,6 @@
 	object-fit: cover;
 	object-position: center;
 }
-
 
 #banner .arrow {
 	position: absolute;
@@ -51,6 +72,9 @@
 	position: absolute;
 	bottom: 40px;
 	display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 100%; */
 }
 
 #banner .icons{
@@ -60,7 +84,7 @@
   width: 100%;
   padding: 0 1rem 0 1rem;
   top: 50%;
-  display: none;
+  /* display: none; */
 }
 
 #banner .icons .icon-div{
@@ -98,12 +122,16 @@
 }
 
 .dot_selected {
-	background-color: #fff;
+	background-color: var(--main-color);
 }
 
 .home-content{
   max-width: 61rem;
   z-index: 99;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .home-content h1{
@@ -300,6 +328,11 @@
 	flex-direction: column;
 	padding: 2rem 2rem 3rem 2rem;
   margin-top: 2rem;
+}
+
+video{
+  width: 100%;
+  height: 100%;
 }
 
 .vid-sect h1{

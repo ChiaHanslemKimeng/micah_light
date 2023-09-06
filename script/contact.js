@@ -50,3 +50,26 @@ window.onscroll = () => {
 
   footer.classList.toggle('show-animate', this.innerHeight + this.screenY >= document.scrollingElement.scrollHeight);
 }
+
+
+// contact form send mail ======================
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.innerHTML = 'Submitting...';
+
+   const serviceID = 'service_86ed4fb';
+   const templateID = 'template_ra4ript';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.innerHTML = 'Submit';
+      // alert('Sent!');
+    }, (err) => {
+      btn.innerHTML = 'Submit';
+      alert(JSON.stringify(err));
+    });
+});

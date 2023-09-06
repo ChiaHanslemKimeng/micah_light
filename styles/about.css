@@ -33,19 +33,19 @@
 
 .about-img{
   display: flex;
-  height: 500px;
+  /* height: 500px; */
   gap: 3rem;
 }
 
 .about-img img{
   width: 400px;
-  height: 100%;
-  transform: scale(1.1 ease-in-out);
+  height: 500px;
+  /* transform: scale(1.1 ease-in-out); */
   transition: .7s;
 }
 
 .about-img img:hover{
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
   transition: .7s;
 }
 
@@ -132,7 +132,7 @@
 @media (max-width: 787px){
   .about-img {
     flex-direction: column;
-    height: 900px;
+    /* height: 900px; */
   }
 }
 
