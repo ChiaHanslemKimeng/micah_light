@@ -4,8 +4,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10rem;
-  margin-bottom: 5rem;
+  margin-top: 14rem;
+  margin-bottom: 6rem;
 }
 
 video{
@@ -38,6 +38,12 @@ video{
 
 .home .lowerBorder{
   margin-top: .3rem;
+}
+
+.videos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .Vrow{

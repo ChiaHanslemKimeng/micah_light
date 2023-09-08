@@ -1,13 +1,16 @@
 
+.header.sticky{
+  background: var(--bg-color);
+}
 
 .home{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 12rem;
-  /* margin-bottom: 3rem; */
-  gap: 4rem;
+  margin-top: 14rem;
+  margin-bottom: 6rem;
+  /* gap: 4rem; */
 }
 
 .home h1{
@@ -25,6 +28,12 @@
 	height: 3px;
 	width: 100%;
 	background: var(--text-color);
+}
+
+.musics{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Mrow{

@@ -3,19 +3,19 @@
 // home music array ===================================================
 const musics = [
   {
-    image: "../photos/img1.jpg",
+    image: "./photos/img1.jpg",
     playtime: "3:24",
-    audio: "../audio/aud1.mp3"
+    audio: "./audio/aud1.mp3"
   },
   {
-    image: "../photos/img2.jpg",
+    image: "./photos/img2.jpg",
     playtime: "3:09",
-    audio: "../audio/aud2.mp3"
+    audio: "./audio/aud2.mp3"
   },
   {
-    image: "../photos/img3.jpg",
+    image: "./photos/img3.jpg",
     playtime: "3:21",
-    audio: "../audio/aud3.mp3"
+    audio: "./audio/aud3.mp3"
   }
 ]
 
@@ -34,6 +34,8 @@ musics.forEach((music) => {
 });
 
 document.querySelector('.js-music').innerHTML = musicHtml;
+
+
 
 
 // home slider ===============================================================================>
@@ -85,7 +87,7 @@ function left(){
 	if(etape < 0){
 		etape = slidelength - 1;
 	}
-	Timage.src = "../photos/" + tabimages[etape].image;
+	Timage.src = "./photos/" + tabimages[etape].image;
 	text.innerHTML = tabimages[etape].tagLine;
 	dot[etape].classList.add('dot_selected');
 }
@@ -96,7 +98,7 @@ function right(){
 	if( etape >= slidelength ){
        etape = 0;
 	}
-	Timage.src = "../photos/" + tabimages[etape].image;
+	Timage.src = "./photos/" + tabimages[etape].image;
 	text.innerHTML = tabimages[etape].tagLine;
 	dot[etape].classList.add('dot_selected');
 }
@@ -104,6 +106,8 @@ function right(){
 setInterval(right, 4000);
 
 // ==========================================================================================>
+
+
 
 // menu toggle ======================
 let menuIcon = document.querySelector('#menu-icon');
