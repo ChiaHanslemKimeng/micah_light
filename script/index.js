@@ -160,3 +160,18 @@ window.onscroll = () => {
   footer.classList.toggle('show-animate', this.innerHeight + this.screenY >= document.scrollingElement.scrollHeight);
 }
 
+
+
+// page onload part =======================================================
+
+var myVar;
+    
+    function myfunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+    
+    function showPage() {
+      document.getElementById("welcome-page").style.display = "none";
+      document.getElementById("main-el").style.display = "block";
+    }
+
