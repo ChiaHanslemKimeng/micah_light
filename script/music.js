@@ -24,6 +24,16 @@ const musics = [
     image: "../photos/img5.jpg",
     playtime: "3:20",
     audio: "../audio/aud5.mp3"
+  },
+  {
+    image: "../photos/home3.jpg",
+    playtime: "5:16",
+    audio: "../audio/aud6.mp3"
+  },
+  {
+    image: "../photos/home2.jpg",
+    playtime: "3:51",
+    audio: "../audio/aud7.mp3"
   }
 ]
 
