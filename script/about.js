@@ -49,3 +49,53 @@ window.onscroll = () => {
 
   footer.classList.toggle('show-animate', this.innerHeight + this.screenY >= document.scrollingElement.scrollHeight);
 }
+
+// gallery section
+
+const pictures = [
+  {
+    image: "../photos/about.jpg"
+  },
+  {
+    image: "../photos/about2.jpg"
+  },
+  {
+    image: "../photos/about3.jpg"
+  },
+  {
+    image: "../photos/about4.jpg"
+  },
+  {
+    image: "../photos/about5.jpg"
+  },
+  {
+    image: "../photos/about6.jpg"
+  },
+  {
+    image: "../photos/about7.jpg"
+  },
+  {
+    image: "../photos/about8.jpg"
+  },
+  {
+    image: "../photos/about9.jpg"
+  },
+  {
+    image: "../photos/about10.jpg"
+  }
+]
+
+
+let pictureHtml = '';
+
+pictures.forEach((picture) => {
+  pictureHtml += `
+       
+          <img src="${picture.image}" alt="#">
+       
+  `
+});
+
+document.querySelector('.js-picture').innerHTML = pictureHtml;
+
+
