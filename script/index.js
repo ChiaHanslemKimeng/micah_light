@@ -164,14 +164,14 @@ window.onscroll = () => {
 
 // page onload part =======================================================
 
-var myVar;
+// var myVar;
     
-    function myfunction() {
-      myVar = setTimeout(showPage, 2000);
-    }
+//     function myfunction() {
+//       myVar = setTimeout(showPage, 2000);
+//     }
     
-    function showPage() {
-      document.getElementById("welcome-page").style.display = "none";
-      document.getElementById("main-el").style.display = "block";
-    }
+//     function showPage() {
+//       document.getElementById("welcome-page").style.display = "none";
+//       document.getElementById("main-el").style.display = "block";
+//     }
 
