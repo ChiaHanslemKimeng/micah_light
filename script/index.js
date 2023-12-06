@@ -3,7 +3,7 @@
 // home music array ===================================================
 const musics = [
   {
-    image: "./photos/img1.jpg",
+    image: "./photos/about4.jpg",
     playtime: "3:24",
     audio: "./audio/aud1.mp3"
   },
@@ -13,7 +13,7 @@ const musics = [
     audio: "./audio/aud2.mp3"
   },
   {
-    image: "./photos/img3.jpg",
+    image: "./photos/about8.jpg",
     playtime: "3:21",
     audio: "./audio/aud3.mp3"
   }
