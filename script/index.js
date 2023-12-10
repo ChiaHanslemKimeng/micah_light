@@ -40,20 +40,14 @@ document.querySelector('.js-music').innerHTML = musicHtml;
 
 // home slider ===============================================================================>
 const slides = [
-	{
-		"image": "home1.jpg"
-	},
-	{
-		"image": "home3.jpg"
-	},
   {
-    "image": "photo 2.jpg"
+    "image": "photo 5.jpg"
   },
   {
     "image": "photo 3.jpg"
   },
   {
-    "image": "photo 5.jpg"
+    "image": "photo 2.jpg"
   },
   {
     "image": "photo 7.jpg"
@@ -63,6 +57,12 @@ const slides = [
   },
   {
     "image": "photo 6.jpg"
+  },
+  {
+     "image": "home1.jpg"
+  },
+  {
+     "image": "home3.jpg"
   }
 ]
 
