@@ -54,6 +54,30 @@ window.onscroll = () => {
 
 const pictures = [
   {
+    image: "../photos/photo 6.jpg"
+  },
+  {
+    image: "../photos/photo 8.jpg"
+  },
+  {
+    image: "../photos/photo 7.jpg"
+  },
+  {
+    image: "../photos/photo 5.jpg"
+  },
+  {
+    image: "../photos/photo 4.jpg"
+  },
+  {
+    image: "../photos/photo 3.jpg"
+  },
+  {
+    image: "../photos/photo 2.jpg"
+  },
+  {
+    image: "../photos/photo 1.jpg"
+  },
+  {
     image: "../photos/about.jpg"
   },
   {

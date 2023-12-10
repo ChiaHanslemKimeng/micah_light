@@ -8,7 +8,7 @@ const musics = [
     audio: "./audio/aud1.mp3"
   },
   {
-    image: "./photos/img2.jpg",
+    image: "./photos/photo 1.jpg",
     playtime: "3:09",
     audio: "./audio/aud2.mp3"
   },
@@ -41,17 +41,29 @@ document.querySelector('.js-music').innerHTML = musicHtml;
 // home slider ===============================================================================>
 const slides = [
 	{
-		"image": "IMG_2485.jpg"
-	},
-	{
 		"image": "home1.jpg"
 	},
 	{
-		"image": "home2.jpg"
-	},
-	{
 		"image": "home3.jpg"
-	}
+	},
+  {
+    "image": "photo 2.jpg"
+  },
+  {
+    "image": "photo 3.jpg"
+  },
+  {
+    "image": "photo 5.jpg"
+  },
+  {
+    "image": "photo 7.jpg"
+  },
+  {
+    "image": "photo 4.jpg"
+  },
+  {
+    "image": "photo 6.jpg"
+  }
 ]
 
 
